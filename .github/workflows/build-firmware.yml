@@ -38,3 +38,9 @@ jobs:
         with:
           name: firmware-bin
           path: build/*.bin
+
+      - name: Archive All
+        uses: actions/upload-artifact@v3
+        with:
+          name: firmware-all
+          path: build/*
